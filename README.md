@@ -8,7 +8,7 @@ This example demonstrates a project authored in Eclipse (JBoss Developer Studio)
 
 Use of this example requires 
 * an existing Maven repository `nexus.example.com`
-* an instance of BPM Suite 'as1.example.com`
+* an instance of BPM Suite `as1.example.com`
 * Maven for building and deploying the example project
 * a REST client for interacting with `as1.example.com`. We will include cURL samples
 
