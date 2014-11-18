@@ -25,6 +25,7 @@ __note:__ Due to https://bugzilla.redhat.com/show_bug.cgi?id=1127032 a BPM serve
 ```
 
 ### Maven Repository Configuration
+#### On Your Laptop
 The project in kie-assets contains a `distributionManagement` element in the pom.xml. This should be altered to point at your Maven repository.
 ```xml
 <distributionManagement>
@@ -48,7 +49,7 @@ If the server requires authentication, you should provide this in your ~/.m2/set
     ...
 </settings>
 ```
-
+#### On The Server
 The execution server will need to know about the Maven repository. This is best achieved by providing a custom settings.xml. In the servers `standalone.xml` add a system property.
 ```xml
 <system-properties>
