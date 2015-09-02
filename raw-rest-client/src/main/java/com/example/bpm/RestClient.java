@@ -12,8 +12,8 @@ import org.apache.http.util.EntityUtils;
 public class RestClient {
 
 	private static final String BPMS_USER = "bpmsAdmin";
-	private static final String BPMS_PASSWORD = "SECRET";
-	private static final String BPMS_HOST = "as1.example.com:8080";
+	private static final String BPMS_PASSWORD = "jbossadmin1!";
+	private static final String BPMS_HOST = "as2.example.com:8080";
 	private static final String DEPLOYMENT_ID = "com.example.bpm:kie-assets:1.0.2";
 	private static final String PROCESS_NAME = "sample-process";
 

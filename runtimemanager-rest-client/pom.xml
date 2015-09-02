@@ -8,9 +8,9 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.jbpm</groupId>
-				<artifactId>jbpm-bom</artifactId>
-				<version>6.0.3-redhat-6</version>
+				<groupId>org.jboss.bom.brms</groupId>
+				<artifactId>jboss-brms-bpmsuite-bom</artifactId>
+				<version>6.1.0.GA-redhat-2</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
@@ -20,13 +20,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.kie.remote</groupId>
-			<artifactId>kie-services-client</artifactId>
-			<exclusions>
-				<exclusion>
-					<artifactId>jms</artifactId>
-					<groupId>javax.jms</groupId>
-				</exclusion>
-			</exclusions>
+			<artifactId>kie-remote-client</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

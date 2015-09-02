@@ -90,7 +90,7 @@ Build and deploy kie-assets into the Maven repository
 `/kie-assets> mvn clean deploy`
 
 Deploy kie-assets onto the BPM Suite server, using the appropriate admin credentials for that server
-`>curl -X POST 'http://username:password@as1.example.com:8080/business-central/rest/deployment/com.example.bpm:kie-assets:1.0.2/deploy'`
+`>curl -X POST 'http://username:password@as1.example.com:8080/business-central/rest/deployment/com.example.bpm:kie-assets:1.0.3/deploy'`
 
 ### Using the remote Kie API
 Under `/runtimemanager-rest-client`, customize RestClient.java with the correct url and admin credentials
@@ -98,7 +98,7 @@ Under `/runtimemanager-rest-client`, customize RestClient.java with the correct 
 private static final String BPMS_USER = "username";
 private static final String BPMS_PASSWORD = "password";
 private static final String BPMS_HOST = "as1.example.com:8080";
-private static final String DEPLOYMENT_ID = "com.example.bpm:kie-assets:1.0.2";
+private static final String DEPLOYMENT_ID = "com.example.bpm:kie-assets:1.0.3";
 private static final String PROCESS_NAME = "sample-process";
 ```
 Then run RestClient.java using either eclipse, or mvn exec:java
@@ -112,7 +112,7 @@ Under `/raw-rest-client`, customize RestClient.java with the correct url and adm
 private static final String BPMS_USER = "username";
 private static final String BPMS_PASSWORD = "password";
 private static final String BPMS_HOST = "as1.example.com:8080";
-private static final String DEPLOYMENT_ID = "com.example.bpm:kie-assets:1.0.2";
+private static final String DEPLOYMENT_ID = "com.example.bpm:kie-assets:1.0.3";
 private static final String PROCESS_NAME = "sample-process";
 ```
 Then run RestClient.java using either eclipse, or mvn exec:java

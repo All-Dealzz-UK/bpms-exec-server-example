@@ -3,22 +3,28 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example.bpm</groupId>
 	<artifactId>kie-assets</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>kjar</packaging>
 
-	<distributionManagement>
+	<repositories>
 		<repository>
-			<id>nexus.example.com</id>
-			<url>http://nexus.example.com:8081/nexus/content/repositories/bpm</url>
+			<id>redhat-public-repository</id>
+			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
-	</distributionManagement>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.jbpm</groupId>
-				<artifactId>jbpm-bom</artifactId>
-				<version>6.0.3-redhat-6</version>
+				<groupId>org.jboss.bom.brms</groupId>
+				<artifactId>jboss-brms-bpmsuite-bom</artifactId>
+				<version>6.1.0.GA-redhat-2</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
@@ -38,7 +44,7 @@
 			<plugin>
 				<groupId>org.kie</groupId>
 				<artifactId>kie-maven-plugin</artifactId>
-				<version>6.0.3-redhat-6</version>
+                <version>6.2.0.Final-redhat-4</version>
 				<extensions>true</extensions>
 			</plugin>
 		</plugins>
